@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>Ramo Creative | Request</title>
+
+    <!---------------- Favicon ---------------->
+
+    <link rel="shortcut icon" type="image/jpg" href="Assets/Favicon.svg"/>
+
+    <!---------------- Font-family ---------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!---------------- Remix icon ---------------->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!---------------- CSS ---------------->
+
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+
+    <!---------------- Scroll up ---------------->
+
+    <div id="progress">
+        <span id="progress-value"><i class="ri-arrow-up-line"></i></span>
+    </div>
+
+    <!---------------- Header ---------------->
+
+    <header class="header | bg-neutral-900" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo"><img src="Assets/Logo.svg" alt="Ramo Creative"></a>
+                <button class="menu hamburger-button" aria-controls="navigation" aria-expanded="false">
+                    <svg  stroke="var(--clr-primary-400)" class="hamburger" viewBox=" 0 0 100 100" width =36>
+                        <line class="line top" 
+                        x1="90" x2="10" y1="50" y2="50"
+                        stroke-width="10"
+                        stroke-linecap="round"
+                        ></line>
+
+                        <line class="line bottom" 
+                        x1="90" x2="10" y1="50" y2="50"
+                        stroke-width="10"
+                        stroke-linecap="round"
+                        ></line>
+                    </svg>
+                </button>
+                <nav class="navigation" id="navigation">
+                    <ul aria-label="Primary" role="list" class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="">Request</a></li>
+                    </ul>
+                    <div class="contact-container-header">
+                        <p>Get in touch</p>
+                        <div class="sm-container">
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-mail-send-line"></i></a>
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-twitter-x-line"></i></a>
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-behance-line"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!---------------- Main ---------------->
+
+    <main>
+        <section class="request | bg-neutral-200 text-neutral-900">
+            <div class="request-container container | padding-block">
+                <form class="form" action="#">
+                    <div>
+                        <h2 class="title fs-secondary-heading">Your Information</h2>
+
+                        <div class="fields personal">
+                            <div class="input-field">
+                                <label for="clientName">Ful Name</label>
+                                <input type="text" name="clientName" id="clientName" placeholder="Enter your name">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="clientEmail">Email</label>
+                                <input type="email" name="clientEmail" id="clientEmail" placeholder="Enter your email">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="clientPhone">Phone</label>
+                                <input type="tel" name="clientPhone" id="clientPhone" placeholder="Enter your phone number">
+                            </div>
+
+                            <div>
+                                <label for="clientGender">Gender</label>
+                                <div class="custom-select | bg-neutral-100">
+                                    <select name="clientGender" id="clientGender">
+                                        <option value="none">Select</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Robot">Robot </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="clientWebsite">Website</label>
+                                <input type="url" name="clientWebsite" id="clientWebsite" placeholder="Enter your website address">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="clientOccupation">Occupation</label>
+                                <input type="text" name="clientOccupation" id="clientOccupation" placeholder="Enter your occupation">
+                            </div>
+                        </div>
+
+                        <h2 class="title fs-secondary-heading">Project Information</h2>
+
+                        <div class="fields project">
+                            <div class="input-field">
+                                <label for="projectName">Project Name</label>
+                                <input type="text" name="projectName" id="projectName" placeholder="Enter your project name">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="projectCompanyActivities">Company Activities</label>
+                                <input type="text" name="projectCompanyActivities" id="projectCompanyActivities" placeholder="Enter company activities">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="projectSlogan">Slogan / Tagline</label>
+                                <input type="text" name="projectSlogan" id="projectSlogan" placeholder="Enter Slogan / Tagline">
+                            </div>
+
+                            <div class="input-field | date">
+                                <label for="projectFoundationDate">Foundation Date</label>
+                                <input type="date" name="projectFoundationDate" id="projectFoundationDate">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="projectWebsite">Website</label>
+                                <input type="url" name="projectWebsite" id="projectWebsite" placeholder="Enter company website">
+                            </div>
+
+                            <div class="input-field textarea">
+                                <label for="projectMsg">About the Company & the Project</label>
+                                <textarea class="textarea" rows="14" cols="30" name="projectMsg" id="projectMsg" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+
+                        <h2 class="title fs-secondary-heading">Required Design</h2>
+
+                        <div class="designs-card-continer">
+                            <input type="checkbox" name="stationary" id="check1">
+                            <label for="check1" class="design-card | bg-neutral-100">
+                                <i class="ri-file-list-3-line | text-primary-400 bg-neutral-600"></i>
+                                <h2 class="fs-secondary-heading fw-semi-bold">Stationary</h2>
+                                <p class="text-neutral-500">
+                                    Including: A Business Card, Letterhead, Corporate Folder, Envelope, CD Cover and Jacket & Sticker
+                                </p>
+                            </label>
+        
+                            <input type="checkbox" name="websiteUi" id="check2">
+                            <label for="check2" class="design-card | bg-neutral-100">
+                                <i class="ri-layout-2-line | text-primary-400 bg-neutral-600"></i>
+                                <h2 class="fs-secondary-heading fw-semi-bold">Website UI</h2>
+                                <p class="text-neutral-500">
+                                    One Page
+                                </p>
+                            </label>
+        
+                            <input type="checkbox" name="packaging" id="check3">
+                            <label for="check3" class="design-card | bg-neutral-100">
+                                <i class="ri-box-3-line | text-primary-400 bg-neutral-600"></i>
+                                <h2 class="fs-secondary-heading fw-semi-bold">Packaging</h2>
+                                <p class="text-neutral-500">
+                                    Profile & Cover Picture Designs
+                                </p>
+                            </label>
+                        </div>
+
+                        <h2 class="title fs-secondary-heading">Logo Type</h2>
+
+                        <div class="logos-card-continer">
+                            <input type="radio" id="radio1" name="logoType" name="iconic">
+                            <label for="radio1" class="logo-card | bg-neutral-100">
+                                <i class="ri-switch-line | text-primary-400 bg-neutral-600"></i>
+                                <h2 class="fs-secondary-heading fw-semi-bold">Iconic</h2>
+                                <p class="text-neutral-500">
+                                    An abstract icon consisting of a single letter, shape or specific symbol.
+                                </p>
+                            </label>
+        
+                            <input type="radio" id="radio2" name="logoType" name="typeface">
+                            <label for="radio2" class="logo-card | bg-neutral-100">
+                                <i class="ri-visa-line | text-primary-400 bg-neutral-600"></i>
+                                <h2 class="fs-secondary-heading fw-semi-bold">Typeface</h2>
+                                <p class="text-neutral-500">
+                                    A logo consisting of the brand name only without an icon.
+                                </p>
+                            </label>
+        
+                            <input type="radio" id="radio3" name="logoType" name="combined">
+                            <label for="radio3" class="logo-card | bg-neutral-100">
+                                <i class="ri-kakao-talk-fill | text-primary-400 bg-neutral-600"></i>
+                                <h2 class="fs-secondary-heading fw-semi-bold">Combined</h2>
+                                <p class="text-neutral-500">
+                                    The icon is combined with the name of the brand.
+                                </p>
+                            </label>
+                        </div>
+
+                        <h2 class="title fs-secondary-heading">Logo Properties</h2>
+
+                        <div class="logo-properties-container">
+                            <div class="logo-properties-subcontainer">
+                                <p>Classic</p>
+                                <input type="range" name="range1" min="0" max="6" step="1">
+                                <p>Modern</p>
+                            </div>
+
+                            <div class="logo-properties-subcontainer">
+                                <p>Youthful</p>
+                                <input type="range" name="range2" min="0" max="6" step="1">
+                                <p>Adult</p>
+                            </div>
+
+                            <div class="logo-properties-subcontainer">
+                                <p>Manly</p>
+                                <input type="range" name="range3" min="0" max="6" step="1">
+                                <p>Feminine</p>
+                            </div>
+
+                            <div class="logo-properties-subcontainer">
+                                <p>Formal</p>
+                                <input type="range" name="range4" min="0" max="6" step="1">
+                                <p>Casual</p>
+                            </div>
+
+                            <div class="logo-properties-subcontainer">
+                                <p>Economic</p>
+                                <input type="range" name="range5" min="0" max="6" step="1">
+                                <p>Fancy</p>
+                            </div>
+                        </div>
+
+                        <h2 class="title fs-secondary-heading">General Questions</h2>
+
+                        <div class="general-questions-fields">
+                            <div class="input-field">
+                                <label for="question1">What does your brand / company offer to the consumer?</label>
+                                <input type="text" name="question1" id="question1" placeholder="Enter your answer">
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="question2">What is the main message that you would like to convey with the logo design?</label>
+                                <input type="text" name="question2" id="question2" placeholder="Enter your answer">
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="question3">Is there a unique selling point to your brand or product?</label>
+                                <input type="text" name="question3" id="question3" placeholder="Enter your answer">
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="question4">What is the target market; e.g, age, status, gender, profession, hobbies etc</label>
+                                <input type="text" name="question4" id="question4" placeholder="Enter your answer">
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="question5">Where is the logo likely to be seen?</label>
+                                <input type="text" name="question5" id="question5" placeholder="Enter your answer">
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="question6">Are there any colour pallets that you have in mind?</label>
+                                <input type="text" name="question6" id="question6" placeholder="Enter your answer">
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="question7">Please list 4-8 adjectives that best describe your brand / company.</label>
+                                <input type="text" name="question7" id="question7" placeholder="Enter your answer">
+                            </div>
+                        </div>
+
+                        <h2 class="title fs-secondary-heading">&nbsp;</h2>
+
+                        <div class="general-questions-fields">
+                            <p class="text-neutral-400">
+                                Thank you for your attention to completing the necessary information. Your effort in providingaccurate and complete details is greatly appreciated. It's crucial to emphasize thesignificance of this information, as it will serve as the foundation for future reliance anddecision-making processes.
+                                <br><br>
+                                I kindly urge you to meticulously review and double-check all the provided details toguarantee their accuracy and completeness. Your thoroughness will significantly contribute tothe reliability and effectiveness of the information provided.
+                                <br><br>
+                                Your diligence in this matter is highly valued, as it ensures a smooth and accurate processingof the data. Your commitment to precision not only safeguards against errors but alsostrengthens the trust and reliability of the information for its intended use.
+                                <br><br>
+                                Once again, thank you for investing your time and attention in ensuring the completeness andaccuracy of the provided information. Your dedication in this regard is instrumental andgreatly appreciated.
+                            </p>
+    
+                            <div>
+                                <label for="paymentMethod">Payment Method</label>
+                                <div class="custom-select | bg-neutral-100">
+                                    <select name="paymentMethod" id="paymentMethod">
+                                        <option value="none">Select</option>
+                                        <option value="zain-cash">Zain Cash</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="design-budget">Design Budget (In dollars)</label>
+                                <input type="number" name="designBudget" id="design-budget" min="0" placeholder="$1000.00 USD">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-button-container button-container | fw-medium">
+                        <button type="submit" class="button">Submit<i class="ri-arrow-right-line"></i></button>
+                        <span>Sending your information...</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!---------------- Footer ---------------->
+
+    <footer class="footer | padding-block bg-neutral-100 text-neutral-900">
+        <div class="container">
+            <div class="even-columns">
+                <p class="copyright">Ramo Creative ©2024. All Rights Reserved.</p>
+                <div class="fotter-sm-container sm-container">
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-mail-send-line"></i></a>
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-behance-line"></i></a>
+                </div>
+            </div>              
+        </div>
+    </footer>
+
+    <!---------------- JavaScript ---------------->
+
+    <script defer src="JavaScript/script.js"></script>
+    <script defer src="JavaScript/request.js"></script>
+
+</body>
+</html>

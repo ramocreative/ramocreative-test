@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo Creative</title>
+
+    <!---------------- Favicon ---------------->
+
+    <link rel="shortcut icon" type="image/jpg" href="Assets/Favicon.svg"/>
+
+    <!---------------- Font-family ---------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!---------------- Remix icon ---------------->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!---------------- CSS ---------------->
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '715117780141013');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=715117780141013&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!---------------- Javascript ---------------->
+
+    <script defer src="JavaScript/script.js"></script>
+
+</head>
+<body>
+
+    <!---------------- Scroll up ---------------->
+
+    <div id="progress">
+        <span id="progress-value"><i class="ri-arrow-up-line"></i></span>
+    </div>
+
+    <!---------------- Header ---------------->
+
+    <header class="header | bg-neutral-900" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo"><img src="Assets/Logo.svg" alt="Ramo Creative"></a>
+                <button class="menu hamburger-button" aria-controls="navigation" aria-expanded="false">
+                    <svg  stroke="var(--clr-primary-400)" class="hamburger" viewBox=" 0 0 100 100" width =36>
+                        <line class="line top" 
+                        x1="90" x2="10" y1="50" y2="50"
+                        stroke-width="10"
+                        stroke-linecap="round"
+                        ></line>
+
+                        <line class="line bottom" 
+                        x1="90" x2="10" y1="50" y2="50"
+                        stroke-width="10"
+                        stroke-linecap="round"
+                        ></line>
+                    </svg>
+                </button>
+                <nav class="navigation" id="navigation">
+                    <ul aria-label="Primary" role="list" class="nav-list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="request.html">Request</a></li>
+                    </ul>
+                    <div class="contact-container-header">
+                        <p>Get in touch</p>
+                        <div class="sm-container">
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-mail-send-line"></i></a>
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-twitter-x-line"></i></a>
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.instagram.com/ramocreative"><i class="ri-behance-line"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---------------- Main ---------------->
+
+    <main>
+
+        <!-- Home -->
+
+        <section class="home | bg-neutral-900 text-neutral-100">
+            <div class="container | padding-block">
+                <p class="fs-300 bg-neutral-700 text-primary-400">Hi, I'm Ramo</p>
+                <h1 class="fs-primary-heading fw-semi-bold">Let's make your ideas <br> become reality</h1>
+                <p>
+                    My name is Raman S. Jalal, known as “Ramo Creative”. A passionate graphic designer specializing in crafting eye-catching logos and impactful brand experiences, based in Iraq.
+                </p>
+                <div class="button-container | fw-medium">
+                    <a class="button">Let's Talk<i class="ri-arrow-right-line"></i></a>
+                    <a class="button" data-type="inverted">Projects<i class="ri-external-link-line"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section class="projects | bg-neutral-100 text-neutral-900">
+            <div class="projects-container container | padding-block">
+                <div class="projects-section-title">
+                    <div>
+                        <p class="projects-subtitle">Projects <br> &#126;</p>
+                        <h1 class="projects-title | fs-primary-heading fw-semi-bold">Selected Works</h1>
+                    </div>
+                    
+                </div>
+                <div class="all-projects-button-container button-container | fw-medium">
+                    <a href="projects/" class="all-projects-button button | text-neutral-100">All Projects<i class="ri-arrow-right-line"></i></a>
+                </div>
+
+                <div class="wrapper">
+                    <i id="left" class="ri-arrow-left-s-line"></i>
+
+                    <div class="carousel">
+                        <img src="Assets/iMAD.png" draggable="false">
+                        <img src="Assets/Dupamicaffeine.png" draggable="false">
+                        <img src="Assets/TiJLTiL-Gamers.png" draggable="false">
+                        <img src="Assets/DSW.png" draggable="false">
+                        <img src="Assets/DSW.png" draggable="false">
+                    </div>
+
+                    <i id="right" class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+
+        <section class="services | bg-neutral-900 text-neutral-100">
+            <div class="services-container container | padding-block">
+                <div class="services-section-title">
+                    <p>Services <br> &#126;</p>
+                    <h1 class="fs-primary-heading fw-semi-bold">How can I help you?</h1>
+                </div>
+
+                <div class="services-card-continer">
+                    <div class="service-card | bg-neutral-700">
+                        <i class="ri-pencil-ruler-2-line | text-primary-400 bg-neutral-600"></i>
+                        <h2 class="fs-secondary-heading fw-semi-bold">Logo Design</h2>
+                        <p class="text-neutral-500">
+                            I offer professional and creative logo design services that help businesses establish a strong visual identity.<br><br>With a focus on quality and attention to detail, I collaborate closely with clients to create unique and impactful logos that effectively represent their brand.
+                        </p>
+                        <a class="text-neutral-100" href="#">Learn more</a>
+                    </div>
+
+                    <div class="service-card | bg-neutral-700">
+                        <i class="ri-book-2-line | text-primary-400 bg-neutral-600"></i>
+                        <h2 class="fs-secondary-heading fw-semi-bold">Branding</h2>
+                        <p class="text-neutral-500">
+                            Get comprehensive and strategic branding services that help businesses establish a strong and cohesive brand identity.<br><br>With a focus on delivering impactful and memorable brand experiences, I work closely with clients to create a brand that resonates with their target audience and sets them apart from the competition.
+                        </p>
+                        <a class="text-neutral-100" href="#">Learn more</a>
+                    </div>
+
+                    <div class="service-card | bg-neutral-700">
+                        <i class="ri-ai-generate | text-primary-400 bg-neutral-600"></i>
+                        <h2 class="fs-secondary-heading fw-semi-bold">Social Media</h2>
+                        <p class="text-neutral-500">
+                            Get creative and tailored social media design services that help businesses optimize their online presence and engage with their target audience effectively.<br><br>With a focus on visually captivating designs and strategic storytelling, I collaborate closely with clients to create compelling social media visuals that leave a lasting impression.
+                        </p>
+                        <a class="leran-more-button | text-neutral-100" href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+
+        <section class="cta | padding-block bg-secondary-400 text-neutral-100">
+            <div class="container">
+                <div class="even-columns">
+                    <h2 class="cta-title | fs-secondary-heading fw-semi-bold">Let's make your ideas become reality</h2>
+                    <div class="cta-button-container button-container | fw-medium">
+                        <a class="cta-button button">Let's Talk<i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <section class="about | bg-neutral-900 text-neutral-100" id="about">
+            <div class="about-container container | padding-block">
+                <div class="about-section-title">
+                    <p>About <br> &#126;</p>
+                    <h1 class="fs-primary-heading fw-semi-bold">Who am I?</h1>
+                </div>
+
+                <div class="information-container">
+                    <div class="image-of-me">
+                        <img src="Assets/Profile_Picture.jpg" alt="Ramo Creative">
+                    </div>
+
+                    <div class="details">
+                        <div class="top">
+                            <div class="about-cards-container">
+                                <div class="about-card | bg-neutral-700">
+                                    <i class="ri-medal-line"></i>
+                                    <p class="fs-500">Experience</p>
+                                    <p class="text-neutral-500">+5 Years</p>
+                                </div>
+                                <div class="about-card | bg-neutral-700">
+                                    <i class="ri-star-smile-line"></i>
+                                    <p class="fs-500">Skills</p>
+                                    <p class="text-neutral-500">Adobe Creative Suite</p>
+                                </div>
+                                <div class="about-card | bg-neutral-700">
+                                    <i class="ri-customer-service-2-line"></i>
+                                    <p class="fs-500">Support</p>
+                                    <p class="text-neutral-500">Online 24/7</p>
+                                </div>
+                            </div>
+                            <p class="description | text-neutral-500">
+                                My name is Raman S. Jalal, known as “Ramo Creative”. A passionate graphic designer specializing in crafting eye-catching logos and impactful brand experiences, based in Iraq.
+                                <br>
+                                <br>
+                                I create stunning brand identities that leave a lasting impact. My diverse portfolio showcases a range of projects, each meticulously designed using the Adobe Suite to ensure a perfect representation of the client's brand essence.
+                            </p>
+                        </div>
+                        <div class="button-container | fw-medium">
+                            <a class="button" href="Assets/CV.pdf" download="CV.pdf" target="_blank">Download CV<i class="ri-file-download-line"></i></a>
+                            <a class="button" data-type="inverted">Projects<i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+
+        <!-- Contact -->
+
+        <section>
+            <div class="container">
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!---------------- Footer ---------------->
+
+    <footer class="footer | padding-block bg-neutral-100 text-neutral-900">
+        <div class="container">
+            <div class="even-columns">
+                <p class="copyright">Ramo Creative ©2024. All Rights Reserved.</p>
+                <div class="fotter-sm-container sm-container">
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-mail-send-line"></i></a>
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.instagram.com/ramocreative"><i class="ri-behance-line"></i></a>
+                </div>
+            </div>              
+        </div>
+    </footer>
+    
+</body>
+</html>
